@@ -25,6 +25,7 @@ body {
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    background-color: #f5f5f5;
 }
 
 
@@ -32,3 +33,121 @@ h1 {
     font-weight: 500;
 }
 
+.zbozi {
+  display: flex;
+  margin: 100px 180px;
+  justify-content: center;
+  box-shadow:  2px 5px 10px #959595;
+  border-radius: 3%;
+}
+
+.vizual {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#06d7c1, #50cc49 );
+  border-radius: 3% 0 0 3%;
+  padding: 40px;
+  color: white;
+}
+
+.vizual,
+.detaily {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.cena {
+  font-size:36px;
+  font-weight: bold;
+}
+
+.cenovka {
+  align-self: flex-end;
+  text-align: right;
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.slogan {
+  font-size: 20px;
+  margin-top: 35px;
+}
+
+.detaily {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 0 3% 3% 0;
+  background-color: white;
+}
+
+.velikosti {
+  display: flex;
+  margin-top: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.velikosti li {
+  margin: 10px;
+  padding: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.nazev,
+.parametr,
+.tlacitko {
+  text-transform: uppercase;
+}
+
+.parametr {
+  margin-bottom: 0;
+}
+
+.nazev {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.produkt {
+  color: #959595;
+  margin-top: 0;
+}
+
+.tlacitko {
+  color: white;
+  background-color: #f15f42;
+  padding: 15px 40px;
+  border-radius: 5%;
+}
+
+h2 {
+  border-top: #06d7c1;
+  border-top-style: solid;
+  padding-top: 50px;
+}
+
+.velikosti li:hover {
+  color: #f15f42;
+  border-color: #f15f42;
+}
+
+.tlacitko {
+  text-decoration: none;
+} 
+
+.bota {
+  position: relative;
+}
+
+.bota img {
+  position: absolute;
+  left: -100px;
+ 
+}
