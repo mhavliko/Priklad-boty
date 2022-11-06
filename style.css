@@ -22,12 +22,15 @@ body {
 
 /* ----- zde zacni psat vlastni css ----- */
 
+/*zbozi*/
+
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
 }
-
 
 h1 {
     font-weight: 500;
@@ -36,25 +39,29 @@ h1 {
 
 .zbozi {
   display: flex;
-  margin: 100px 210px;
+  margin: 100px;
   justify-content: center;
   box-shadow:  2px 5px 10px #959595;
   border-radius: 3%;
-}
-
-.vizual {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(#06d7c1, #50cc49 );
-  border-radius: 3% 0 0 3%;
-  padding: 40px;
-  color: white;
+  width: 900px;
 }
 
 .vizual,
 .detaily {
+  display: flex;
+  flex-direction: column;
   flex-basis: 50%;
   flex-grow: 1;
+  flex-shrink: 1;
+  padding: 40px;
+}
+
+/*vizual*/
+
+.vizual {
+  background: linear-gradient(#06d7c1, #50cc49 );
+  border-radius: 3% 0 0 3%;
+  color: white;
 }
 
 .cena {
@@ -76,10 +83,19 @@ h1 {
   margin-top: 35px;
 }
 
+.bota {
+  position: relative;
+}
+
+.bota img {
+  position: absolute;
+  left: -100px;
+}
+
+/*konec vizual*/
+/*detaily*/
+
 .detaily {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
   border-radius: 0 3% 3% 0;
   background-color: white;
 }
@@ -111,12 +127,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.nazev {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-}
-
 .produkt {
   color: #959595;
   margin-top: 0;
@@ -127,6 +137,7 @@ h1 {
   background-color: #f15f42;
   padding: 15px 40px;
   border-radius: 5%;
+  text-decoration: none;
 }
 
 h2 {
@@ -140,17 +151,19 @@ h2 {
   border-color: #f15f42;
 }
 
-.tlacitko {
-  text-decoration: none;
-} 
+/*konec vizual*/
 
-.bota {
-  position: relative;
-}
-
-.bota img {
-  position: absolute;
-  left: -100px;
-  width: 130%;
-  height: auto;
+@media (max-width:970px){
+  .zbozi {
+    flex-direction: column;
+    min-width: 500px;
+    width: 500px;
+  }
+  .vizual {
+    flex-basis: 400px;
+  }
+  .bota img {
+    width: 400px;
+    height: auto; 
+  }
 }
