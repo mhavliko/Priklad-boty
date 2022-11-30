@@ -149,7 +149,6 @@ h2 {
    text-transform: uppercase;
 }
 
-
 .produkt {
   color: #959595;
 }
@@ -160,15 +159,19 @@ h2 {
   background-color: #f15f42;
   padding: 15px 30px;
   border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.2s
 }
 
-.akce:hover {}
+.akce:active {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  transform: translate(1px, 2px);
+}
 
 .tlacitko {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 /*konec vizual*/
